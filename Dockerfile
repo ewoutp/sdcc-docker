@@ -19,5 +19,5 @@ RUN mkdir /sdcc && cd /sdcc && wget http://downloads.sourceforge.net/project/sdc
 
 RUN cp -R /sdcc/sdcc-${SDCCVER}/device/non-free/include/* /usr/local/share/sdcc/include/ \
  && cp -R /sdcc/sdcc-${SDCCVER}/device/non-free/lib/build/* /usr/local/share/sdcc/lib/ \
- && rm -Rf /tmp/* 
+ && rm -Rf /gputils /sdcc /tmp/* 
 
